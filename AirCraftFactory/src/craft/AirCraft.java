@@ -1,3 +1,4 @@
+package craft;
 // AirCraft.java
 public class AirCraft
 {
@@ -23,6 +24,7 @@ public class AirCraft
    public int getAircraftstrength(){return aircraftstrength;}
    
 }
+
  class Chopper extends AirCraft
 {
 	 //Data members
@@ -38,8 +40,9 @@ public class AirCraft
 	//Access function
 	//get
 	public int getChopperstrength(){return chopperstrength;}
-	
 }
+	
+
 	
 	
 	

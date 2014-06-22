@@ -1,3 +1,5 @@
+package craft;
+
 
 public class Client 
 
