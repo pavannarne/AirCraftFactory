@@ -25,6 +25,8 @@ public class AirCraft
    
 }
 
+
+// move these to other class. 
  class Chopper extends AirCraft
 {
 	 //Data members

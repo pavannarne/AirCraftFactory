@@ -16,6 +16,12 @@ public class Client
 		//aerospatiale is an object for Chopper class
 		Chopper aerospatiale=new Chopper("american",500,50);
 		System.out.println("Chopper strength : " +aerospatiale.getChopperstrength());
+		
+		/**
+		 * 
+		 */
+		AirCraft craft = Factory.buildAirCraft("Apache");
+		System.out.println("The Strengh of the Air Craft: " + craft.getAircraftstrength());
 
 
 	}
