@@ -6,12 +6,7 @@ public class AirCraft
    private String name ;
    private int aircraftstrength;
 
-   // Helping function
-   private void trace(String s)
-   { 
-      System.out.println(s);
-   }
-   // Manager function
+     // Manager function
    public AirCraft(String name1,int aircraftstrength1)
    { 
      name=name1;
@@ -22,9 +17,14 @@ public class AirCraft
    // get
    public String getName() { return name; }
    public int getAircraftstrength(){return aircraftstrength;}
+  /* public String toString()
+   {
+	   return "AirCraft is made by"+name+",AirCraft Strength is :"+aircraftstrength+"";
+   }*/
    
 }
 
+<<<<<<< HEAD
 
 // move these to other class. 
  class Chopper extends AirCraft
@@ -48,3 +48,6 @@ public class AirCraft
 	
 	
 	
+=======
+ 
+>>>>>>> origin/master
