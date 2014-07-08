@@ -25,6 +25,6 @@ public class Chopper extends AirCraft
 			   			+ "\nAirCraft is made by : "+getName()+
 					   "\nAirCraft Strength is :"+getAircraftstrength()+
 					   "\n Chopper Strength is :"+chopperstrength+
-					   "\n_________________________";
+					   "\n_________________________\n";
 		   }
 }
