@@ -24,6 +24,21 @@ public class Factory
 		return aircraft1;
 	   	
 	}
+	/**
+	 * This method will return the bulk of aircraft that has the same name.
+	 * 
+	 * @param name aircraft name
+	 * @return list of aircraft
+	 */
+	public static ArrayList<AirCraft> buildAircrafts(String name) {
+		ArrayList<AirCraft> list = new ArrayList<AirCraft>();
+		for(AirCraft air : airCraftList ) {
+			if(name.equalsIgnoreCase(air.getName())) {
+				list.add(air);
+			}
+		}
+		return list;
+	}
 	static
 	{
 		airCraftList = new ArrayList<AirCraft>();	

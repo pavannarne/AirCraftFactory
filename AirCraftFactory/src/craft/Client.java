@@ -1,5 +1,7 @@
 package craft;
 
+import java.util.ArrayList;
+
 public class Client
 
 {
@@ -20,6 +22,16 @@ public class Client
 				+ craft.getAircraftstrength());
 		System.out.println(Factory.buildAirCraft("ethihod").toString());
 
+	}
+	/**
+	 * this method can be moved to other class,  such as PrintUtil.java
+	 */
+	public static void print(ArrayList<AirCraft> lists) {
+		/**
+		 * loop the lists, and grab the aircraft, call the toString method here
+		 */
+		
+		
 	}
 
 }
