@@ -10,7 +10,7 @@ public class Factory
 	 * 
 	 * @param name
 	 */
-	public static AirCraft buildAirCraft(String name)
+public static AirCraft buildAirCraft(String name)
 	
 	{
 		AirCraft aircraft1 = null;
