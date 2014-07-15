@@ -8,7 +8,7 @@ public class AirCraft
 {
    // Data members
    private String name ;
-   private int aircraftstrength;
+   private static int aircraftstrength;
 
      // Manager function
    public AirCraft(String name1,int aircraftstrength1)
@@ -20,7 +20,13 @@ public class AirCraft
    // Access function
    // get
    public String getName() { return name; }
-   public int getAircraftstrength(){return aircraftstrength;}
+   public static int getAircraftstrength(){return aircraftstrength;}
  
    
+   public String toString() {
+		return "AirCraft Description\n_________________________\n "
+				+ "\nAirCraft is made by : " + getName()
+				+ "\nAirCraft Strength is :" + getAircraftstrength()
+				+ "\n_________________________\n";
+	}
 }

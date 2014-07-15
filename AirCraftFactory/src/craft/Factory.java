@@ -10,27 +10,44 @@ public class Factory
 	 * 
 	 * @param name
 	 */
-public static AirCraft buildAirCraft(String name)
-	
-	{
-		AirCraft aircraft1 = null;
-		for(AirCraft craft:airCraftList)
-		{
-			if(name.equalsIgnoreCase(craft.getName())) 
-			{
-				aircraft1 = craft;
-			}
-		}
-		return aircraft1;
-	   	
-	}
+//public static AirCraft buildAirCraft(String name)
+//	
+//	{
+//		AirCraft aircraft1 = null;
+//		for(AirCraft craft:airCraftList)
+//		{
+//			if(name.equalsIgnoreCase(craft.getName())) 
+//			{
+//				aircraft1 = craft;
+//			}
+//		}
+//		return aircraft1;
+//	   	
+//	}
+//
+//public static AirCraft buildAirCraft(int strength)
+//
+//{
+//	AirCraft aircraft1 = null;
+//	for(AirCraft craft:airCraftList)
+//	{
+//		if(AirCraft.getAircraftstrength()==strength)
+////		if(strength.equalsIgnoreCase(craft.getAircraftstrength()) 
+//		{
+//			aircraft1 = craft;
+//		}
+//	}
+//	return aircraft1;
+//   	
+//}
 	/**
 	 * This method will return the bulk of aircraft that has the same name.
 	 * 
 	 * @param name aircraft name
 	 * @return list of aircraft
 	 */
-	public static ArrayList<AirCraft> buildAircrafts(String name) {
+	public static ArrayList<AirCraft> buildAircrafts(String name)
+	{
 		ArrayList<AirCraft> list = new ArrayList<AirCraft>();
 		for(AirCraft air : airCraftList ) {
 			if(name.equalsIgnoreCase(air.getName())) {
@@ -39,9 +56,22 @@ public static AirCraft buildAirCraft(String name)
 		}
 		return list;
 	}
+	
+	
+	public static ArrayList<AirCraft> buildAircrafts(int strength)
+	{
+		ArrayList<AirCraft> list = new ArrayList<AirCraft>();
+		for(AirCraft a : airCraftList ) {
+			if(AirCraft.getAircraftstrength()==strength) {
+				list.add(a);
+			}
+		}
+		return list;
+	}
 	static
 	{
-		airCraftList = new ArrayList<AirCraft>();	
+		airCraftList = new ArrayList<AirCraft>();
+//		/airCraftList=new ArrayList<Chopper>();
 		AirCraft airCraft = new Chopper("Apache", 100,200);
 		AirCraft airCraft4 = new Chopper("Apache", 150,200);
 		AirCraft airCraft5 = new Chopper("Apache", 150,250);
